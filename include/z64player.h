@@ -637,6 +637,9 @@ typedef struct Player {
     /* 0x0A86 */ s8         unk_A86;
     /* 0x0A87 */ u8         unk_A87;
     /* 0x0A88 */ Vec3f      unk_A88; // previous body part 0 position
+#if Z64ROM_VERSION >= 1007000
+#   include <player_extras.h>
+#endif
 } Player; // size = 0xA94
 
 #endif
