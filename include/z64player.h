@@ -463,7 +463,8 @@ typedef s32 (*PlayerFunc82C)(struct Player*, struct PlayState*);
 typedef void (*PlayerFuncA74)(struct PlayState*, struct Player*);
 
 #if Z64ROM_VERSION >= 1007000
-#   include <player_types.h>
+#	define Z64ROM_WANT_PLAYER_EXTRAS_TYPES_H
+#   include <player_extras.h>
 #endif
 
 typedef struct Player {
