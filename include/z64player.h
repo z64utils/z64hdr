@@ -462,6 +462,10 @@ typedef void (*PlayerFunc674)(struct Player*, struct PlayState*);
 typedef s32 (*PlayerFunc82C)(struct Player*, struct PlayState*);
 typedef void (*PlayerFuncA74)(struct PlayState*, struct Player*);
 
+#if Z64ROM_VERSION >= 1007000
+#   include <player_types.h>
+#endif
+
 typedef struct Player {
     /* 0x0000 */ Actor      actor;
     /* 0x014C */ s8         currentTunic; // current tunic from `PlayerTunic`
